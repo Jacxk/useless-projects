@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block Jump</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div id="gameover">
+    <div class="center">
+        <h1>GameOver</h1>
+        <button onclick="restart()">reset</button>
+    </div>
+</div>
+<div style="text-align: center; margin-bottom: 10px">
+    <h1>Block Jump</h1>
+    <span>Score: <span id="score">0</span></span>
+    |
+    <span>Velocity: <span id="vel">1</span></span>
+    |
+    <span>HighScore: <span id="highScore">0</span></span>
+    |
+    <button onclick="restart()" style="display: inline-block">restart</button>
+</div>
+<div style="text-align: center">
+    <canvas id="bg" style="border:1px solid #000000;"></canvas>
+</div>
+<script src="main.js"></script>
+<script src="keyboard_detection.js"></script>
+<script src="obstacle_generator.js"></script>
+</body>
+</html>
